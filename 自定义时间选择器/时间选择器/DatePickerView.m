@@ -24,7 +24,8 @@
     if (self) {
         
         _baseView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT-PICKERVIEW_HEIGHT, SCREEN_WIDTH, PICKERVIEW_HEIGHT)];
-        _baseView.backgroundColor = [UIColor colorWithRed:0.94 green:0.95 blue:0.95 alpha:1.0];
+//        _baseView.backgroundColor = [UIColor colorWithRed:0.94 green:0.95 blue:0.95 alpha:1.0];
+        _baseView.backgroundColor = [UIColor redColor];
         [self addSubview:_baseView];
         
         UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 1)];
@@ -49,7 +50,7 @@
         
         _datePicker = [[UIDatePicker alloc]initWithFrame:CGRectMake(0, 41, SCREEN_WIDTH, PICKERVIEW_HEIGHT-41)];
         
-        _datePicker.backgroundColor = [UIColor colorWithRed:0.79 green:0.80 blue:0.83 alpha:1.0];
+        _datePicker.backgroundColor = [UIColor whiteColor];
         NSLocale *locale = [[NSLocale alloc]initWithLocaleIdentifier:@"zh_CN"];
         _datePicker.locale = locale;
         _datePicker.date = [NSDate date];
